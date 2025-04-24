@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="td.css">
+    <script>
+        function addi() {
+            let td=document.querySelector(".item");
+            let lst=document.querySelector(".tdl");
+            let lsti=document.createElement("li");
+            let db=document.createElement("button");
+            db.innerText='삭제';
+            db.style.backgroundColor='#44f';
+            db.style.color='#fff';
+            db.style.marginTop='10px';
+            db.style.marginBottom='10px';
+            db.style.width='50px';
+            db.style.height='30px';
+            db.style.marginRight='20px'
+            lsti.style.display='flex';
+            lsti.style.justifyContent='space-between';
+            lsti.style.alignItems='center';
+            lsti.style.backgroundColor='rgb(235, 121, 121)';
+            lsti.style.paddingLeft='30px';
+            lsti.innerText=td.value;
+            lsti.appendChild(db);
+            lst.appendChild(lsti);
+            td.value="";
+            td.focus();
+            db.onclick=function(e) {
+                let pn=e.target.parentNode;
+                lst.removeChild(pn);
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="cd">
+        <h1>Mytodo</h1>
+        <hr>
+        <input type="text" class="item" placeholder="할일">
+        <button type="button" onclick="addi()">할일추가</button>
+        <hr>
+        <ul class="tdl"></ul>
+    </div>
+</body>
+</html>
