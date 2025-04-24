@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="396dp"
+        android:layout_height="483dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="124dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="396dp"
+            android:layout_height="483dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="91dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:text="OK"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            tools:layout_editor_absoluteX="267dp"
+            tools:layout_editor_absoluteY="415dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CheckBox" />
+
+        <TextView
+            android:id="@+id/textView"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <EditText
+            android:id="@+id/editTextText2"
+            tools:layout_editor_absoluteX="129dp"
+            tools:layout_editor_absoluteY="86dp"
+            android:layout_width="234dp"
+            android:layout_height="43dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/editTextText3"
+            tools:layout_editor_absoluteX="129dp"
+            tools:layout_editor_absoluteY="156dp"
+            android:layout_width="234dp"
+            android:layout_height="44dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine"
+            android:layout_width="340dp"
+            android:layout_height="109dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="285dp" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine2"
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="230dp"
+            android:layout_width="338dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:id="@+id/textView2"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="97dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView3"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="170dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
